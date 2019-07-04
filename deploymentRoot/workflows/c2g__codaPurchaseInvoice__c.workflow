@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+
+/* -----------------------------------------------------*/
+
+    <fieldUpdates>
+        <fullName>Payable_Invoice_Approved_Record_Type</fullName>
+        <description>Changes the Payable Invoice record type from Standard to Approved after the record has been marked as approved.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Approved_Payable_Invoice</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Payable Invoice - Approved Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>Payable_Invoice_Approved_Record_Type</fullName>
         <description>Changes the Payable Invoice record type from Standard to Approved after the record has been marked as approved.</description>
